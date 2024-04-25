@@ -65,12 +65,55 @@ Animal Crossing Wiki
   
 </table>
 
-<embed src="https://nookipedia.com/wiki/Main_Page"
+    <table style="margin-bottom; 2.5%">
+
+<tr>
+
+  <th>
+
+<button onclick="openFullscreen();">Fullscreen</button>
+
+  </th>
+
+  <th>
+
+<p></p>
+    
+  </th>
+
+  <th>
+
+    <p></p>
+    
+  </th>
+
+</tr>
+  
+</table>
+      
+<embed controls id="embed" src="https://nookipedia.com/wiki/Main_Page"
 style="
 width: 100%;
 height: 100%;
 ">
     
   </body>
-  
+
+<script>
+/* Get the element you want displayed in fullscreen mode (a video in this example): */
+var elem = document.getElementById("embed");
+
+/* When the openFullscreen() function is executed, open the video in fullscreen.
+Note that we must include prefixes for different browsers, as they don't support the requestFullscreen method yet */
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+    
 </html>
