@@ -45,18 +45,39 @@
     }
     .LeftSide {
       display: inline-block;
-      width: 45%;
-      margin-right: 2.5%;
-    }
+      width: 49.75%;
+      margin: auto;
+      align-items: center;
+      align-content: center;
+        }
     .RightSide {
       display: inline-block;
-      width: 45%;
-      margin-left: 2.5%;
+      width: 49.75%;
+      margin: auto;
+      align-items: center;
+      align-content: center;
     }
     .FeaturedGames {
       text-align: center;
     }
-      
+    .GameFeature {
+      width:100%;
+      aspect-ratio: 3/4;
+      height: auto;
+      margin: auto;
+    }
+    .ImagePreview {
+width:100%;
+aspect-ratio: 1/1;
+height: auto;
+margin: auto;
+    }
+      .Left1 {
+        display: inline-block;
+        width: 45%;
+        align-self: center;
+        margin-left: 3%;
+      }
     </style>
     
   </head>
@@ -77,10 +98,32 @@
   <div class="MainContainer">
     <h3 class="FeaturedGames">Featured Games</h3>
   <div class="LeftSide">
-    <p>Left Side</p>
+    <div class="Left1">
+      <div class="GameFeature">
+        <a href="/Application/HTML_Pages/Games/Miniblox.html"><embed class="ImagePreview" src="/Application/Assets/Images/MinibloxPreview.png"></a>
+          <a href="/Application/HTML_Pages/Games/Miniblox.html"><p class="FeaturedGames">Miniblox</p></a>
+      </div>
+    </div>
+    <div class="Left1">
+      <div class="GameFeature">
+        <a href="/Application/HTML_Pages/Games/SortTheCourt.html"><embed class="ImagePreview" src="/Application/Assets/Images/SortTheCourtPreview.png"></a>
+          <a href="/Application/HTML_Pages/Games/SortTheCourt.html"><p class="FeaturedGames">Sort The Court</p></a>
+      </div>
+    </div>
   </div>
   <div class="RightSide">
-    <p>Right Side</p>
+    <div class="Left1">
+      <div class="GameFeature">
+        <a href="/Application/HTML_Pages/Games/RooftopSnipe2.html"><embed class="ImagePreview" src="/Application/Assets/Images/RoofTopSnipe2Preview.png"></a>
+          <a href="/Application/HTML_Pages/Games/Miniblox.html"><p class="FeaturedGames">Rooftop Snipers 2</p></a>
+      </div>
+    </div>
+    <div class="Left1">
+      <div class="GameFeature">
+        <a href="/Application/HTML_Pages/Games/DuckLife4.html"><embed class="ImagePreview" src="/Application/Assets/Images/DuckLife4Preview.png"></a>
+          <a href="/Application/HTML_Pages/Games/DuckLife4.html"><p class="FeaturedGames">Duck Life 4</p></a>
+      </div>
+    </div>
   </div>
   </div>
 </body>
