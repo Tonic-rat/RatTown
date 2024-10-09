@@ -15,15 +15,48 @@
     -->
 
   <style>
-    
-body {
+
+    body {
         background: black;
         color: white;
     }
 
-      #m1 a {display: inline-block;
+    body a:link {
+      color: white;
+    }
+
+    body a:visited {
+      color: white;
+    }
+
+    body a:hover {
+        color:red;
+    }
+
+    body a:active {
+        color: red;
+    }
+
+    header a:link {
+      color: #0000EE;
+    }
+
+    header a:visited {
+      color: #551A8B;
+    }
+
+    header a:hover {
+        color:#551A8B;
+    }
+
+    header a:active {
+        color: #551A8B;
+    }
+
+    #m1 a {display: inline-block;
           font-size: 24px;}
-          #m1 div {display: inline-block;
+
+    #m1 div {display: inline-block;
           font-size: 24px;}
 
     h2 {
@@ -37,8 +70,7 @@ body {
       background: black;
     }
     
-    #myUL {
-      margin-left: 7.5%; 
+    #myUL { 
       list-style-type: none;
     }
 
@@ -46,6 +78,37 @@ body {
       font-size: 20px;
       margin-bottom: 0.5%;
     }
+
+    #onev1Image, #two048Image, #aDarkRoomImage, #basketballLegendsImage, #bemuseImage, #billiardsImage, 
+    #blackjackImage, #bloonsTowerDefense1Image, #bloonsTowerDefense2Image, #bloonsTowerDefense3Image, 
+    #bloonsTowerDefense4Image, #bowmanImage, #burritoBisonImage, #catanImage, #celesteClassicImage, 
+    #chessImage, #CNTableTennisImage, #checkersImage, #cookieClickImage, #crimsonRoomImage, #crossyRoadImage,
+    #deepestSwordImage, #diepIOImage, #duckLife1Image, #duckLife2Image, #duckLife3Image, #duckLife4Image,
+    #fnaf1Image, #fnaf2image, #FPAWorld1Image, #FPAWorld2Image, #FPAWorld3Image{
+      width: 35%;
+      /* All images should be 403 pixels to optimize resources */
+      aspect-ratio: 1/1;
+      height: auto;
+      margin-left: 50%;
+      position: absolute;
+      display: none;
+    }
+
+    #onev1:hover ~ #onev1Image, #two048:hover ~ #two048Image, #aDarkRoom:hover ~ #aDarkRoomImage, 
+    #basketballLegends:hover ~ #basketballLegendsImage, #bemuse:hover ~ #bemuseImage, 
+    #billiards:hover ~ #billiardsImage, #blackjack:hover ~ #blackjackImage, 
+    #bloonsTowerDefense1:hover ~ #bloonsTowerDefense1Image, #bloonsTowerDefense2:hover ~ #bloonsTowerDefense2Image, 
+    #bloonsTowerDefense3:hover ~ #bloonsTowerDefense3Image, #bloonsTowerDefense4:hover ~ #bloonsTowerDefense4Image, 
+    #bowman:hover ~ #bowmanImage, #burritoBison:hover ~ #burritoBisonImage, #catan:hover ~ #catanImage, 
+    #celesteClassic:hover ~ #celesteClassicImage, #chess:hover ~ #chessImage, #CNTableTennis:hover ~ #CNTableTennisImage, 
+    #checkers:hover ~ #checkersImage, #cookieClick:hover ~ #cookieClickImage, #crimsonRoom:hover ~ #crimsonRoomImage,
+    #crossyRoad:hover ~ #crossyRoadImage, #deepestSword:hover ~ #deepestSwordImage, #diepIO:hover ~ #diepIOImage,
+    #duckLife1:hover ~ #duckLife1Image, #duckLife2:hover ~ #duckLife2Image, #duckLife3:hover ~ #duckLife3Image,
+    #duckLife4:hover ~ #duckLife4Image, #fnaf1:hover ~ #fnaf1Image, #fnaf2:hover ~ #fnaf2Image, #FPAWorld1:hover ~ #FPAWorld1Image,
+    #FPAWorld2:hover ~ #FPAWorld2Image, #FPAWorld3:hover ~ #FPAWorld3Image{
+      display: inline-block;
+    }
+
   </style>
 </head>
 <header>
@@ -68,63 +131,101 @@ body {
 
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search . . ." title="Type in a name">
 
-<ul id="myUL">
-  <li><a href="../Games/1v1Lol.html">1v1.Lol</a></li>
-  <li><a href="../Games/2048.html">2048</a></li>
-  <li><a href="../Games/ADarkRoom.html">A Dark Room</a></li>
-  <li><a href="../Games/BasketballLegends.html">Basketball Legends</a></li>
-  <li><a href="../Games/Billiards.html">Billiards</a></li>
-  <li><a href="../Games/BlackJack.html">BlackJack</a></li>
-  <li><a href="../Games/BloonsTowerDefense.html">Bloons Tower Defense</a></li>
-  <li><a href="../Games/BloonsTowerDefense2.html">Bloons Tower Defense 2</a></li>
-  <li><a href="../Games/BloonsTowerDefense3.html">Bloons Tower Defense 3</a></li>
-  <li><a href="../Games/BloonsTowerDefense4.html">Bloons Tower Defense 4</a></li>
-  <li><a href="../Games/Bowman.html">Bowman</a></li>
-  <li><a href="../Games/BurritoBison.html">Burrito Bison</a></li>
-  <li><a href="../Games/Catan.html">Catan</a></li>
-  <li><a href="../Games/Celeste.html">Celeste Classic</a></li>
-  <li><a href="../Games/Chess.html">Chess</a></li>
-  <li><a href="../Games/CNTableTennis.html">Cartoon Network Table Tennis</a></li>
-  <li><a href="../Games/Checkers.html">Checkers</a></li>
-  <li><a href="../Games/CookClick.html">Cookie Clicker</a></li>
-  <li><a href="../Games/CrimsonRoom.html">Crimson Room</a></li>
-  <li><a href="../Games/CrossyRoad.html">Crossy Road</a></li>
-  <li><a href="../Games/DeepestSword.html">Deepest Sword</a></li>
-  <li><a href="../Games/Diepio.html">Diep IO</a></li>
-  <li><a href="../Games/DuckLife1.html">Duck Life 1</a></li>
-  <li><a href="../Games/DuckLife2.html">Duck Life 2</a></li>
-  <li><a href="../Games/DuckLife3.html">Duck Life 3</a></li>
-  <li><a href="../Games/DuckLife4.html">Duck Life 4</a></li>
-  <li><a href="../Games/FNAF1.html">Five Nights At Freddy's One</a></li>
-  <li><a href="../Games/FNAF2.html">Five Nights At Freddy's Two</a></li>
-  <li><a href="../Games/FPAWorld1.html">Fancy Pants Adventure World 1</a></li>
-  <li><a href="../Games/FPAWorld2.html">Fancy Pants Adventure World 2</a></li>
-  <li><a href="../Games/FPAWorld3.html">Fancy Pants Adventure World 3</a></li>
-  <li><a href="../Games/ImpossibleQuiz.html">The Impossible Quiz</a></li>
-  <li><a href="../Games/Krunker.html">Krunker.io</a></li>
-  <li><a href="../Games/Miniblox.html">Miniblox</a></li>
-  <li><a href="../Games/OregonTrail.html">The Oregon Trail</a></li>
-  <li><a href="../Games/QWOP.html">QWOP</a></li>
-  <li><a href="../Games/RetrBwl.html">Retro Bowl</a></li>
-  <li><a href="../Games/RagdollParkour.html">Ragdoll Parkour</a></li>
-  <li><a href="../Games/RooftopSnipe.html">Rooftop Snipers</a></li>
-  <li><a href="../Games/RooftopSnipe2.html">Rooftop Snipers 2</a></li>
-  <li><a href="../Games/Run.html">Run</a></li>
-  <li><a href="../Games/Run2.html">Run 2</a></li>
-  <li><a href="../Games/Slitre.html">Solitaire</a></li>
-  <li><a href="../Games/SortTheCourt.html">Sort The Court</a></li>
-  <li><a href="../Games/StickRPGComplete.html">Stick RPG Complete Edition</a></li>
-  <li><a href="../Games/SuperMario63.html">Super Mario 63</a></li>
-  <li><a href="../Games/SuperMarioFlash.html">Super Mario Flash</a></li>
-  <li><a href="../Games/SuperSmashFlash.html">Super Smash Flash</a></li>
-  <li><a href="../Games/Territorial.html">Territorial.io</a></li>
-  <li><a href="../Games/Tetris.html">Tetris</a></li>
-  <li><a href="../Games/TimeShooters2.html">Time Shooters 2</a></li>
-  <li><a href="../Games/Uno.html">Uno</a></li>
-  <li><a href="../Games/Vex1.html">Vex 1</a></li>
-  <li><a href="../Games/Vex2.html">Vex 2</a></li>
-  <li><a href="../Games/Vex3.html">Vex 3</a></li>
-</ul>
+  <div style="width: 90%; margin-left: 7.5%; position: absolute;">
+    <ul id="myUL">
+      <li id="onev1"><a href="../Games/1v1Lol.html">1v1.Lol</a></li>
+      <img id="onev1Image" src="../../Assets/Images/HoverImages/1v1lol.png" loading="lazy">
+      <li id="two048"><a href="../Games/2048.html">2048</a></li>
+      <img id="two048Image" src="../../Assets/Images/HoverImages/2048.png" loading="lazy">
+      <li id="aDarkRoom"><a href="../Games/ADarkRoom.html">A Dark Room</a></li>
+      <img id="aDarkRoomImage" src="../../Assets/Images/HoverImages/aDarkRoom.png" loading="lazy">
+      <li id="basketballLegends"><a href="../Games/BasketballLegends.html">Basketball Legends</a></li>
+      <img id="basketballLegendsImage" src="../../Assets/Images/HoverImages/basketballLegends.png" loading="lazy">
+      <li id="bemuse"><a href="../Games/Bemuse.html">Bemuse</a></li>
+      <img id="bemuseImage" src="../../Assets/Images/HoverImages/bemuse.png" loading="lazy">
+      <li id="billiards"><a href="../Games/Billiards.html">Billiards</a></li>
+      <img id="billiardsImage" src="../../Assets/Images/HoverImages/billiards.png" loading="lazy">
+      <li id="blackjack"><a href="../Games/BlackJack.html">BlackJack</a></li>
+      <img id="blackjackImage" src="../../Assets/Images/HoverImages/blackjack.png" loading="lazy">
+      <li id="bloonsTowerDefense1"><a href="../Games/BloonsTowerDefense.html">Bloons Tower Defense</a></li>
+      <img id="bloonsTowerDefense1Image" src="../../Assets/Images/HoverImages/bloonsTowerDefense1.png" loading="lazy">
+      <li id="bloonsTowerDefense2"><a href="../Games/BloonsTowerDefense2.html">Bloons Tower Defense 2</a></li>
+      <img id="bloonsTowerDefense2Image" src="../../Assets/Images/HoverImages/bloonsTowerDefense2.png" loading="lazy">
+      <li id="bloonsTowerDefense3"><a href="../Games/BloonsTowerDefense3.html">Bloons Tower Defense 3</a></li>
+      <img id="bloonsTowerDefense3Image" src="../../Assets/Images/HoverImages/bloonsTowerDefense3.png" loading="lazy">
+      <li id="bloonsTowerDefense4"><a href="../Games/BloonsTowerDefense4.html">Bloons Tower Defense 4</a></li>
+      <img id="bloonsTowerDefense4Image" src="../../Assets/Images/HoverImages/bloonsTowerDefense4.png" loading="lazy">
+      <li id="bowman"><a href="../Games/Bowman.html">Bowman</a></li>
+      <img id="bowmanImage" src="../../Assets/Images/HoverImages/bowman.png" loading="lazy">
+      <li id="burritoBison"><a href="../Games/BurritoBison.html">Burrito Bison</a></li>
+      <img id="burritoBisonImage" src="../../Assets/Images/HoverImages/burritoBison.png" loading="lazy">
+      <li id="catan"><a href="../Games/Catan.html">Catan</a></li>
+      <img id="catanImage" src="../../Assets/Images/HoverImages/catan.png" loading="lazy">
+      <li id="celesteClassic"><a href="../Games/Celeste.html">Celeste Classic</a></li>
+      <img id="celesteClassicImage" src="../../Assets/Images/HoverImages/celesteClassic.png" loading="lazy">
+      <li id="checkers"><a href="../Games/Checkers.html">Checkers</a></li>
+      <img id="checkersImage" src="../../Assets/Images/HoverImages/checkers.png" loading="lazy">
+      <li id="chess"><a href="../Games/Chess.html">Chess</a></li>
+      <img id="chessImage" src="../../Assets/Images/HoverImages/chess.png" loading="lazy">
+      <li id="CNTableTennis"><a href="../Games/CNTableTennis.html">Cartoon Network Table Tennis</a></li>
+      <img id="CNTableTennisImage" src="../../Assets/Images/HoverImages/CNTableTennis.png" loading="lazy">
+      <li id="cookieClick"><a href="../Games/CookClick.html">Cookie Clicker</a></li>
+      <img id="cookieClickImage" src="../../Assets/Images/HoverImages/cookiecClick.png" loading="lazy">
+      <li id="crimsonRoom"><a href="../Games/CrimsonRoom.html">Crimson Room</a></li>
+      <img id="crimsonRoomImage" src="../../Assets/Images/HoverImages/crimsonRoom.png" loading="lazy">
+      <li id="crossyRoad"><a href="../Games/CrossyRoad.html">Crossy Road</a></li>
+      <img id="crossyRoadImage" src="../../Assets/Images/HoverImages/crossyRoad.png" loading="lazy">
+      <li id="deepestSword"><a href="../Games/DeepestSword.html">Deepest Sword</a></li>
+      <img id="deepestSwordImage" src="../../Assets/Images/HoverImages/deepestSword.png" loading="lazy">
+      <li id="diepIO"><a href="../Games/Diepio.html">Diep IO</a></li>
+      <img id="diepIOImage" src="../../Assets/Images/HoverImages/diepIO.png" loading="lazy">
+      <li id="duckLife1"><a href="../Games/DuckLife1.html">Duck Life 1</a></li>
+      <img id="duckLife1Image" src="../../Assets/Images/HoverImages/duckLife1.png" loading="lazy">
+      <li id="duckLife2"><a href="../Games/DuckLife2.html">Duck Life 2</a></li>
+      <img id="duckLife2Image" src="../../Assets/Images/HoverImages/duckLife2.png" loading="lazy">
+      <li id="duckLife3"><a href="../Games/DuckLife3.html">Duck Life 3</a></li>
+      <img id="duckLife3Image" src="../../Assets/Images/HoverImages/duckLife3.png" loading="lazy">
+      <li id="duckLife4"><a href="../Games/DuckLife4.html">Duck Life 4</a></li>
+      <img id="duckLife4Image" src="../../Assets/Images/HoverImages/duckLife4.png" loading="lazy">
+      <li id="fnaf1"><a href="../Games/FNAF1.html">Five Nights At Freddy's One</a></li>
+      <img id="fnaf1Image" src="../../Assets/Images/HoverImages/fnaf1.png" loading="lazy">
+      <li id="fnaf2"><a href="../Games/FNAF2.html">Five Nights At Freddy's Two</a></li>
+      <img id="fnaf2Image" src="../../Assets/Images/HoverImages/fnaf2.png" loading="lazy">
+      <li id="FPAWorld1"><a href="../Games/FPAWorld1.html">Fancy Pants Adventure World 1</a></li>
+      <img id="FPAWorld1Image" src="../../Assets/Images/HoverImages/FPAWorld1.png" loading="lazy">
+      <li id="FPAWorld2"><a href="../Games/FPAWorld2.html">Fancy Pants Adventure World 2</a></li>
+      <img id="FPAWorld2Image" src="../../Assets/Images/HoverImages/FPAWorld2.png" loading="lazy">
+      <li id="FPAWorld3"><a href="../Games/FPAWorld3.html">Fancy Pants Adventure World 3</a></li>
+      <img id="FPAWorld3Image" src="../../Assets/Images/HoverImages/FPAWorld3.png" loading="lazy">
+
+      <li><a href="../Games/GnomesVsZombies.html">Gnomes VS. Zombies</a></li>
+      <li><a href="../Games/ImpossibleQuiz.html">The Impossible Quiz</a></li>
+      <li><a href="../Games/Krunker.html">Krunker.io</a></li>
+      <li><a href="../Games/Miniblox.html">Miniblox</a></li>
+      <li><a href="../Games/OregonTrail.html">The Oregon Trail</a></li>
+      <li><a href="../Games/OsuMania.html">Osu! Mania</a></li>
+      <li><a href="../Games/QWOP.html">QWOP</a></li>
+      <li><a href="../Games/RetrBwl.html">Retro Bowl</a></li>
+      <li><a href="../Games/RagdollParkour.html">Ragdoll Parkour</a></li>
+      <li><a href="../Games/RooftopSnipe.html">Rooftop Snipers</a></li>
+      <li><a href="../Games/RooftopSnipe2.html">Rooftop Snipers 2</a></li>
+      <li><a href="../Games/Run.html">Run</a></li>
+      <li><a href="../Games/Run2.html">Run 2</a></li>
+      <li><a href="../Games/Slitre.html">Solitaire</a></li>
+      <li><a href="../Games/SortTheCourt.html">Sort The Court</a></li>
+      <li><a href="../Games/StickRPGComplete.html">Stick RPG Complete Edition</a></li>
+      <li><a href="../Games/SuperMario63.html">Super Mario 63</a></li>
+      <li><a href="../Games/SuperMarioFlash.html">Super Mario Flash</a></li>
+      <li><a href="../Games/SuperSmashFlash.html">Super Smash Flash</a></li>
+      <li><a href="../Games/Territorial.html">Territorial.io</a></li>
+      <li><a href="../Games/Tetris.html">Tetris</a></li>
+      <li><a href="../Games/TimeShooters2.html">Time Shooters 2</a></li>
+      <li><a href="../Games/Uno.html">Uno</a></li>
+      <li><a href="../Games/Vex1.html">Vex 1</a></li>
+      <li><a href="../Games/Vex2.html">Vex 2</a></li>
+      <li><a href="../Games/Vex3.html">Vex 3</a></li>
+    </ul>
+  </div>
 
     </body>
 
@@ -145,5 +246,6 @@ function myFunction() {
         }
     }
 }
+  
 </script>
 </html>
